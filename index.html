@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cebu Tour Service Taxi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Separate CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Announcement Bar -->
+    <div class="announcement text-white text-center py-2">
+        <strong id="announcementText"></strong>
+    </div>   
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo2.png" alt="Cebu Tours Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars"></i> <!-- FontAwesome Menu Icon -->
+            </button>                        
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cebu Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Bohol Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Car Rental</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <img src="images/slide1.png" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/slide2.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="images/slide3.jpg" class="d-block w-100" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>        
+
+    <!-- Cards Section -->
+    <div class="container py-5">
+        <h4 class="text-center fw-bold">🌴 Discover the Wonders of Cebu! 🌊 Your Adventure Awaits — From City Tours to Whale Shark Snorkeling and Island Escapades. Choose Your Experience and Let’s Make Unforgettable Memories! Click <span class="fw-bold"><strong>Book Now</strong></span> to Begin!</h4>
+        
+        <div class="row gy-4"> <!-- 'gy-4' adds vertical spacing -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/simala.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Simala & Carcar Lechon's</h5>
+                        <p class="card-text"><strong>From ₱3500 (Good for 4 pax)</strong></p>
+                        <p class="card-text"><strong>Inclusions: Car / Gas / Driver</strong></p>
+                        <p class="card-text"><strong>Exclusions: Entrance fees</strong></p>
+                    </div>
+                    <div class="card-footer text-start bg-white border-0">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/w-shark.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Whale Shark Snorkeling</h5>
+                        <p class="card-text"><strong>From ₱4500 / person</strong></p>
+                        <p class="card-text"><strong>Inclusions: Car / Gas / Driver</strong></p>
+                        <p class="card-text"><strong>Exclusions: Entrance fees</strong></p>
+                    </div>
+                    <div class="card-footer text-start bg-white border-0">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/safari.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cebu Safari & Adventure Park</h5>
+                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
+                        <p class="card-text"><strong>Inclusions: Car / Gas / Driver</strong></p>
+                        <p class="card-text"><strong>Exclusions: Entrance fees</strong></p>
+                    </div>
+                    <div class="card-footer text-start bg-white border-0">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/Canyoneering.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kawasan Canyoneering</h5>
+                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
+                        <p class="card-text"><strong>Inclusions: Car / Gas / Driver</strong></p>
+                        <p class="card-text"><strong>Exclusions: Entrance fees</strong></p>
+                    </div>
+                    <div class="card-footer text-start bg-white border-0">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/slide1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Cebu City Tour & Mountain Tour</h5>
+                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
+                    </div>
+                    <div class="card-footer text-start bg-white border-0">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/slide1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pescador Island Tour</h5>
+                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
+                    </div>
+                    <div class="card-footer text-start bg-white border-0">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/slide1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pescador Island Tour</h5>
+                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
+                    </div>
+                    <div class="card-footer text-start bg-white border-0">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/slide1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pescador Island Tour</h5>
+                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
+                    </div>
+                    <div class="card-footer text-start bg-white border-0">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="images/slide1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pescador Island Tour</h5>
+                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
+                    </div>
+                    <div class="card-footer text-start bg-white border-0">
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Featured Tours -->
+        <section class="featured-tours">
+            <div class="container">
+              <h2>Top 3 Sights to Visit in Cebu this 2025!</h2>
+              <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="featured-card">
+                    <img src="images/simala.jpg" alt="Whale Shark Snorkeling">
+                    <div class="featured-card-body">
+                      <h5>Whale Shark Snorkeling</h5>
+                      <p>Experience a close encounter with majestic whale sharks in Oslob.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                  <div class="featured-card">
+                    <img src="images/safari.webp" alt="Kawasan Canyoneering">
+                    <div class="featured-card-body">
+                      <h5>Kawasan Canyoneering</h5>
+                      <p>Enjoy the thrill of canyoneering through waterfalls and natural pools.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                  <div class="featured-card">
+                    <img src="images/w-shark.jpg" alt="Simala Pilgrimage">
+                    <div class="featured-card-body">
+                      <h5>Simala Pilgrimage</h5>
+                      <p>Visit the famous Simala Shrine for a spiritual and cultural experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn-success">More Tours</a>
+            </div>
+          </section>          
+        <!--End of Featured  -->
+
+        <!-- Choose Us Section -->
+        <section class="why-choose-us py-5">
+            <div class="container text-center">
+              <h2 class="mb-5">Why Choose Us?</h2>
+              <div class="row">
+                <!-- Best Prices -->
+                <div class="col-md-4 d-flex">
+                  <div class="service-card flex-fill">
+                    <i class="bi bi-tags-fill icon"></i>
+                    <h5>Best Prices</h5>
+                    <p>Enjoy unbeatable prices for your favorite tours without compromising on quality.</p>
+                  </div>
+                </div>
+                <!-- 24/7 Support -->
+                <div class="col-md-4 d-flex">
+                  <div class="service-card flex-fill">
+                    <i class="bi bi-headset icon"></i>
+                    <h5>24/7 Support</h5>
+                    <p>Our team is available around the clock to assist you with any inquiries or emergencies.</p>
+                  </div>
+                </div>
+                <!-- Experienced Guides -->
+                <div class="col-md-4 d-flex">
+                  <div class="service-card flex-fill">
+                    <i class="bi bi-person-badge icon"></i>
+                    <h5>Experienced Guides</h5>
+                    <p>Travel with knowledgeable local guides to enhance your experience and discover hidden gems.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>          
+          
+          <!-- End of Choose Us Section -->
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
