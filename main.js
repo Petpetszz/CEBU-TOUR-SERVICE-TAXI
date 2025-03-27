@@ -113,7 +113,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-  
+
+// Animate On Scroll
+AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true, // Animations occur only once
+    mirror: false, // No reverse animations
+    offset: 100, // Adjust trigger point
+    disable: function() {
+      return window.innerWidth < 768; // Disable on mobile if needed
+    }
+  });
   
 
 
