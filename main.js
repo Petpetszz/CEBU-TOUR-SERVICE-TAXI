@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     typeWriter(announcements[index]);
 });
 
+// Navbar Shrink
 window.addEventListener("scroll", function () {
     let navbar = document.querySelector(".navbar");
     if (window.scrollY > 50) { 
@@ -49,6 +50,72 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("shrink");
     }
 });
+
+// Testimonials
+document.addEventListener("DOMContentLoaded", function () {
+    let carousel = new bootstrap.Carousel(document.getElementById("testimonialCarousel"), {
+        interval: 4000, // Auto-slide every 4 seconds
+        wrap: true
+    });
+});
+
+// Load More Testimonials
+
+document.addEventListener("DOMContentLoaded", function() {
+    const testimonials = document.querySelectorAll(".testimonial-card");
+    const loadMoreBtn = document.getElementById("loadMoreBtn");
+    let visibleCount = 4; // Show initial 4 testimonials
+  
+    // Hide all testimonials except the first 4
+    testimonials.forEach((testimonial, index) => {
+      if (index >= visibleCount) {
+        testimonial.style.display = "none";
+      }
+    });
+  
+    // Load More functionality
+    loadMoreBtn.addEventListener("click", function() {
+      const hiddenTestimonials = Array.from(testimonials).filter(
+        (testimonial) => testimonial.style.display === "none"
+      );
+  
+      // Show next 4 hidden testimonials
+      hiddenTestimonials.slice(0, 4).forEach((testimonial) => {
+        testimonial.style.display = "flex";
+      });
+  
+      // Hide button if all testimonials are visible
+      if (hiddenTestimonials.length <= 4) {
+        loadMoreBtn.style.display = "none";
+      }
+    });
+  });
+
+// floating contact   
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.querySelector('.toggle-button');
+    const contactOptions = document.querySelector('.contact-options');
+    const chatIcon = toggleButton.querySelector('.fa-comment-dots');
+    const closeIcon = toggleButton.querySelector('.fa-times');
+    
+    toggleButton.addEventListener('click', function() {
+        contactOptions.classList.toggle('show');
+        
+        // Toggle icons
+        if (contactOptions.classList.contains('show')) {
+            chatIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+            toggleButton.style.backgroundColor = '#dc3545'; // Red when open
+        } else {
+            chatIcon.style.display = 'block';
+            closeIcon.style.display = 'none';
+            toggleButton.style.backgroundColor = '#6c757d'; // Gray when closed
+        }
+    });
+});
+  
+  
+
 
 
 
