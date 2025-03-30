@@ -63,6 +63,85 @@
     transform: scale(1.05);
 }
 
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+      padding: 15px 0;
+  }
+  
+  .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+  }
+  
+  .nav-item {
+      padding: 10px 15px;
+      position: relative;
+  }
+  
+  /* Subtle divider - only appears between items */
+  .nav-item:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 15px;
+      right: 15px;
+      height: 1px;
+      background-color: rgba(0,0,0,0.08); /* Very subtle line */
+  }
+  
+  .nav-link {
+      padding: 8px 0;
+      display: block;
+  }
+}
+
+/* Mobile Menu (with subtle dividers) */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+      padding: 15px 0;
+  }
+  
+  .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+  }
+  
+  .nav-item {
+      padding: 10px 15px;
+      position: relative;
+  }
+  
+  /* Subtle divider between items */
+  .nav-item:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 15px;
+      right: 15px;
+      height: 1px;
+      background-color: rgba(0,0,0,0.08);
+  }
+}
+
+/* Desktop Menu (NO dividers - clean spaced items) */
+@media (min-width: 992px) {
+  .navbar-nav {
+      display: flex;
+      align-items: center;
+      gap: 20px; /* Adjust spacing between items */
+  }
+  
+  .nav-item::after {
+      display: none !important; /* Force remove any dividers */
+  }
+  
+  .nav-link {
+      padding: 8px 0;
+  }
+}
+
 /* Hero Section */
 #heroCarousel {
     height: 1500px;

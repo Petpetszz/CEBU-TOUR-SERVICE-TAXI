@@ -125,7 +125,7 @@ AOS.init({
       return window.innerWidth < 768; // Disable on mobile if needed
     }
   });
-  
+
 
 
 
