@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 58" width="400" height="58" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Cebu Tour Service Taxi</title>
+  <defs>
+    <style>
+      .bar { fill: #2a3828; }
+      .bg { fill: #ffffff; }
+      .txt {
+        fill: #ffdd3c;
+        font-family: Impact, 'Haettenschweiler', 'Arial Narrow', 'Franklin Gothic Medium', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        stroke: #2a3828;
+        stroke-width: 0.35;
+        paint-order: stroke fill;
+      }
+      .txt-main { font-size: 22px; }
+      .txt-sub { font-size: 11.5px; letter-spacing: 0.18em; font-weight: normal; opacity: 0.95; }
+      .taxi-body { fill: #2a3828; }
+      .taxi-accent { fill: #ffdd3c; }
+      .taxi-wheel { fill: #1a2219; }
+    </style>
+  </defs>
+  <rect class="bar" x="0" y="0" width="400" height="3" />
+  <rect class="bg" x="0" y="3" width="400" height="52" />
+  <rect class="bar" x="0" y="55" width="400" height="3" />
+  <text class="txt txt-main" x="14" y="34">CEBU TOUR</text>
+  <text class="txt txt-sub" x="14" y="48">SERVICE TAXI</text>
+  <g transform="translate(312, 15) rotate(-8 24 15)">
+    <rect class="taxi-body" x="2" y="14" width="40" height="15" rx="3" />
+    <path class="taxi-body" d="M8 14 L12 7 L32 7 L36 14 Z" />
+    <rect class="taxi-accent" x="19" y="4" width="8" height="5" rx="1" />
+    <circle class="taxi-wheel" cx="10" cy="31" r="4.5" />
+    <circle class="taxi-wheel" cx="34" cy="31" r="4.5" />
+    <rect fill="#ffffff" opacity="0.2" x="12" y="18" width="20" height="3" rx="1" />
+  </g>
+</svg>

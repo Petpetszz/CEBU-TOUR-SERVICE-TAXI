@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Cebu Tour Service Taxi</title>
-    <meta name="description" content="Call, WhatsApp, or email Cebu Tour Service Taxi for tour inquiries and bookings.">
+    <title>Book a Tour | Cebu Tour Service Taxi</title>
+    <meta name="description" content="Request a Cebu tour booking — pick your package, date, and contact details. We confirm via WhatsApp or email.">
     <link rel="icon" href="images/logo2.png" type="image/png">
     <link rel="apple-touch-icon" href="images/logo2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body class="home contact-page-body">
+<body class="home booking-page-body">
 
     <div class="announcement text-center py-2 px-2" role="status" aria-live="polite" aria-atomic="true">
         <strong id="announcementText"></strong>
@@ -34,9 +34,9 @@
                         <li class="nav-item"><a class="nav-link" href="index.html#tours">Cebu Tours</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html#bohol">Bohol</a></li>
                         <li class="nav-item"><a class="nav-link" href="transfers.html">Transfers</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="contact.html" aria-current="page">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <li class="nav-item pt-2 pt-lg-0 ms-lg-2">
-                            <a class="btn btn-cts-nav-cta btn-sm px-4" href="book.html">Book now</a>
+                            <a class="btn btn-cts-nav-cta btn-sm px-4" href="book.html" aria-current="page">Book now</a>
                         </li>
                     </ul>
                 </div>
@@ -44,61 +44,101 @@
         </div>
     </nav>
 
-    <main class="contact-page-main">
-        <section class="contact-page-hero contact-section text-center py-5">
-            <div class="contact-overlay" aria-hidden="true"></div>
-            <div class="container contact-content position-relative py-5">
-                <p class="contact-page-hero__kicker text-uppercase small mb-2">Cebu Tour Service Taxi</p>
-                <h1 class="contact-page-hero__title text-white mb-3">Get in touch</h1>
-                <p class="contact-page-hero__lead text-white-50 mb-3 mx-auto">Reach us with one tap — we respond as soon as we can.</p>
-                <p class="small text-white-50 mb-5 mx-auto contact-page-hero__privacy">Phone, WhatsApp Business, Messenger, and email open in your own apps. This page does not send data through our web server.</p>
-                <div class="row justify-content-center align-items-stretch g-3 g-lg-4 contact-page-hero__actions">
-                    <div class="col-12 col-sm-6 col-xl-3">
-                        <a href="tel:+639993720079" class="btn btn-lg btn-cts-primary w-100 py-3 rounded-pill">
-                            <span class="contact-page-hero__btn-cluster">
-                                <i class="fas fa-phone" aria-hidden="true"></i>
-                                <span>+63 999 372 0079</span>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-xl-3">
-                        <a href="https://wa.me/639993720079" class="btn btn-lg btn-contact-wa w-100 py-3 rounded-pill contact-page-hero__btn-wa" target="_blank" rel="noopener noreferrer" title="Open WhatsApp Business chat" aria-label="WhatsApp Business — open chat">
-                            <span class="contact-page-hero__btn-cluster">
-                                <i class="bi bi-whatsapp contact-page-hero__btn-wa-icon" aria-hidden="true"></i>
-                                <span class="contact-page-hero__btn-wa-label">
-                                    <span class="contact-page-hero__wa-brand">WhatsApp</span><span class="contact-page-hero__wa-suffix">Business</span>
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-xl-3">
-                        <a href="https://m.me/cebutaxixi" class="btn btn-lg btn-contact-messenger w-100 py-3 rounded-pill" target="_blank" rel="noopener noreferrer">
-                            <span class="contact-page-hero__btn-cluster">
-                                <i class="fab fa-facebook-messenger" aria-hidden="true"></i>
-                                <span>Messenger</span>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-xl-3">
-                        <a href="mailto:info@cebutourservicetaxi.com" class="btn btn-lg btn-cts-outline w-100 py-3 rounded-pill">
-                            <span class="contact-page-hero__btn-cluster">
-                                <i class="fas fa-envelope" aria-hidden="true"></i>
-                                <span>Email us</span>
-                            </span>
-                        </a>
+    <header class="booking-hero py-5">
+        <div class="container">
+            <p class="booking-hero__kicker mb-2">Request a booking</p>
+            <h1 class="booking-hero__title mb-3">Book a tour or transfer</h1>
+            <p class="booking-hero__lead mb-0">Fill in the form below for a day tour or an airport / hotel transfer, then send your request through WhatsApp or email. We will confirm availability, timing, and price with you directly.</p>
+        </div>
+    </header>
+
+    <main class="container pb-5 booking-main">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 booking-card booking-card--sheet">
+                    <div class="card-body p-4 p-md-5">
+                        <form id="bookingForm" class="booking-form" novalidate>
+                            <div class="booking-form__section">
+                                <h2 class="booking-form__section-label">Trip details</h2>
+                                <div class="mb-4">
+                                <label class="form-label" for="bookingTour">Tour or transfer</label>
+                                <select class="form-select" id="bookingTour" name="tour" required>
+                                        <option value="">Choose an option…</option>
+                                        <option value="simala">Simala &amp; Carcar Lechon</option>
+                                        <option value="whale-shark">Whale Shark Snorkeling (Oslob)</option>
+                                        <option value="safari">Cebu Safari &amp; Adventure Park</option>
+                                        <option value="canyoneering">Kawasan Canyoneering</option>
+                                        <option value="city-mountain">Cebu City Tour &amp; Mountain Tour</option>
+                                        <option value="pescador">Moalboal Sardines Run</option>
+                                        <option value="transfer">Airport &amp; hotel transfer</option>
+                                        <option value="custom">Custom itinerary / not listed</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4" id="bookingVehicleBlock">
+                                    <label class="form-label" for="bookingVehicle">Vehicle type</label>
+                                    <select class="form-select" id="bookingVehicle" name="vehicle">
+                                        <option value="">Choose later / discuss with us</option>
+                                        <option value="sedan">Sedan</option>
+                                        <option value="suv">SUV</option>
+                                        <option value="van">Van</option>
+                                    </select>
+                                    <p class="small text-muted mb-0 mt-1">Day-tour quotes on the website are by vehicle size (private driver &amp; fuel).</p>
+                                    <p class="small mb-0 mt-1 fw-semibold text-dark" id="bookingVehiclePrice" aria-live="polite"></p>
+                                </div>
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="bookingDate">Preferred date</label>
+                                        <input type="date" class="form-control" id="bookingDate" name="date" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label" for="bookingTime">Preferred time</label>
+                                        <input type="time" class="form-control" id="bookingTime" name="time" required>
+                                    </div>
+                                </div>
+                                <div class="mb-0">
+                                    <label class="form-label" for="bookingPax">Number of passengers</label>
+                                    <input type="number" class="form-control" id="bookingPax" name="pax" min="1" max="50" value="2" required>
+                                </div>
+                            </div>
+                            <div class="booking-form__section">
+                                <h2 class="booking-form__section-label">Contact &amp; pickup</h2>
+                                <div class="mb-4">
+                                    <label class="form-label" for="bookingName">Full name</label>
+                                    <input type="text" class="form-control" id="bookingName" name="name" autocomplete="name" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label" for="bookingPhone">Mobile number</label>
+                                    <input type="tel" class="form-control" id="bookingPhone" name="phone" autocomplete="tel" placeholder="+63…" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label" for="bookingEmail">Email</label>
+                                    <input type="email" class="form-control" id="bookingEmail" name="email" autocomplete="email" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label" for="bookingPickup">Pickup location / hotel</label>
+                                    <input type="text" class="form-control" id="bookingPickup" name="pickup" placeholder="Area in Cebu or hotel name" required>
+                                </div>
+                                <div class="mb-0">
+                                    <label class="form-label" for="bookingNotes">Notes or special requests</label>
+                                    <textarea class="form-control" id="bookingNotes" name="notes" rows="4" placeholder="For transfers: flight number, airline, terminal, and full drop-off address. Tours: child seats, extra stops, etc."></textarea>
+                                </div>
+                            </div>
+                            <p class="small booking-actions-note mb-3">Sending opens WhatsApp or your email app with your details filled in. No payment is taken on this website.</p>
+                            <p class="small text-muted booking-privacy-note mb-3">We use what you enter only to reply to your request. We do not sell your details or use them for unrelated marketing. See our <a href="privacy.html" class="text-decoration-none">Privacy policy</a>.</p>
+                            <div class="d-flex flex-column flex-sm-row booking-actions">
+                                <button type="button" class="btn btn-lg btn-booking btn-booking--whatsapp" data-action="whatsapp">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i>Send via WhatsApp
+                                </button>
+                                <button type="button" class="btn btn-lg btn-booking btn-booking--email" data-action="email">
+                                    <i class="bi bi-envelope" aria-hidden="true"></i>Email this request
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="contact-page-hero__panel mt-5 mx-auto">
-                    <div class="contact-page-hero__panel-inner">
-                        <p class="contact-page-hero__address text-white mb-0">
-                            <i class="bi bi-geo-alt contact-page-hero__address-icon" aria-hidden="true"></i>
-                            <span>Labangon, Brgy Tisa, Cebu City</span>
-                        </p>
-                        <a href="book.html" class="btn btn-outline-light btn-lg rounded-pill contact-page-hero__book-btn">Book a tour or transfer</a>
-                    </div>
-                </div>
+                <p class="text-center mt-4 mb-0"><a href="index.html" class="booking-back-link text-decoration-none">&larr; Back to home</a></p>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="footer-section bg-dark text-white pt-5 pb-4 mt-auto">
@@ -123,10 +163,6 @@
                         <li class="mb-3 d-flex align-items-start">
                             <i class="bi bi-envelope me-3 mt-1"></i>
                             <a href="mailto:info@cebutourservicetaxi.com" class="text-white text-decoration-none">info@cebutourservicetaxi.com</a>
-                        </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="fab fa-facebook-messenger me-3 mt-1"></i>
-                            <a href="https://m.me/cebutaxixi" class="text-white text-decoration-none" target="_blank" rel="noopener noreferrer">Messenger</a>
                         </li>
                     </ul>
                 </div>
@@ -190,7 +226,7 @@
             </div>
             <div class="contact-button whatsapp">
                 <a href="https://wa.me/639993720079" target="_blank" rel="noopener noreferrer" title="WhatsApp Business">
-                    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                    <i class="fab fa-whatsapp"></i>
                     <span class="contact-text">WhatsApp</span>
                 </a>
             </div>

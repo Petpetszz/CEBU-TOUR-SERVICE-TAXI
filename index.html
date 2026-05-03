@@ -4,233 +4,308 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cebu Tour Service Taxi</title>
+    <meta name="description" content="Private Cebu tours and airport transfers — Oslob whale sharks, Simala, Kawasan canyoneering, city &amp; mountain trips. Book by WhatsApp or email; no payment on this site.">
+    <link rel="icon" href="images/logo2.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/logo2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css"> <!-- Separate CSS file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-    
-    <!-- Announcement Bar -->
-    <div class="announcement text-white text-center py-2">
-        <strong id="announcementText"></strong>
-    </div>   
+<body class="home">
 
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo-temp.png" alt="Cebu Tours Logo" height="50">
+    <div class="announcement text-center py-2 px-2" role="status" aria-live="polite" aria-atomic="true">
+        <strong id="announcementText"></strong>
+    </div>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white sticky-top nav-home">
+        <div class="container navbar-ref-grid">
+            <a class="navbar-brand navbar-slot-brand" href="index.html">
+                <img class="navbar-brand-logo" src="images/logo2.png" alt="Cebu Tour Service Taxi" width="354" height="200" decoding="async">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Cebu Tours</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Bohol Tours</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                </ul>
+            <div class="navbar-slot-end">
+                <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-nav-cts ms-lg-0 align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tours">Cebu Tours</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#bohol">Bohol</a></li>
+                        <li class="nav-item"><a class="nav-link" href="transfers.html">Transfers</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item pt-2 pt-lg-0 ms-lg-2">
+                            <a class="btn btn-cts-nav-cta btn-sm px-4" href="book.html">Book now</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="2000">
-                <img src="images/slide1.png" class="d-block w-100" alt="">
+    <!-- Hero: single image + overlay + teasers below header -->
+    <div class="hero-stack">
+        <div class="hero-banner">
+            <div class="hero-slide-frame">
+                <img src="images/magellans.jpg" class="hero-slide-img" alt="Magellan’s Cross and Basilica Minore del Santo Niño, Cebu City" loading="eager" decoding="async" fetchpriority="high">
             </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="images/slide2.jpg" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-                <img src="images/slide3.jpg" class="d-block w-100" alt="">
+            <div class="hero-overlay" role="region" aria-label="Book private tours and transfers">
+                <div class="hero-overlay__inner px-3 px-sm-4 px-lg-4 px-xl-5 w-100">
+                    <h1 class="hero-overlay__title">Cebu tours &amp; airport transfers on your schedule</h1>
+                    <div class="hero-overlay__actions">
+                        <a class="btn btn-lg hero-overlay__btn-pill" href="book.html">Book now</a>
+                        <a class="btn btn-lg hero-overlay__btn-pill" href="https://wa.me/639993720079" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
-    </div>        
+        <section id="bohol" class="bohol-teaser text-start text-md-center" aria-label="Bohol tours">
+            <div class="container bohol-teaser__inner">
+                <p class="mb-0 small text-secondary"><strong class="text-dark">Bohol tours too</strong> — countryside &amp; Chocolate Hills. <a href="book.html?tour=custom">Request a private quote</a></p>
+            </div>
+        </section>
+        <section id="transfers" class="bohol-teaser text-start text-md-center" aria-label="Airport and hotel transfers">
+            <div class="container bohol-teaser__inner">
+                <p class="mb-0 small text-secondary"><strong class="text-dark">Airport &amp; hotel transfers</strong> — private van with driver, Mactan &amp; Metro Cebu. <a href="transfers.html">How it works</a> · <a href="book.html?tour=transfer">Request a transfer</a></p>
+            </div>
+        </section>
+    </div>
 
-    <!-- Cards Section -->
-    <div class="container py-5">
-        <h4 class="text-center fw-bold">🌴 Discover the Wonders of Cebu! 🌊 Your Adventure Awaits — From City Tours to Whale Shark Snorkeling and Island Escapades. Choose Your Experience and Let’s Make Unforgettable Memories! Click <span class="fw-bold"><strong>Book Now</strong></span> to Begin!</h4>
-        
-        <div class="row gy-4"> <!-- 'gy-4' adds vertical spacing -->
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/simala.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Simala & Carcar Lechon's</h5>
-                        <p class="card-text"><strong>From ₱3500 (Good for 4 pax)</strong></p>
-                        <p class="card-text"><strong>Inclusions: Car / Gas / Driver</strong></p>
-                        <p class="card-text"><strong>Exclusions: Entrance fees</strong></p>
-                    </div>
-                    <div class="card-footer text-start bg-white border-0">
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/w-shark.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Whale Shark Snorkeling</h5>
-                        <p class="card-text"><strong>From ₱4500 / person</strong></p>
-                        <p class="card-text"><strong>Inclusions: Car / Gas / Driver</strong></p>
-                        <p class="card-text"><strong>Exclusions: Entrance fees</strong></p>
-                    </div>
-                    <div class="card-footer text-start bg-white border-0">
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/safari.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cebu Safari & Adventure Park</h5>
-                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
-                        <p class="card-text"><strong>Inclusions: Car / Gas / Driver</strong></p>
-                        <p class="card-text"><strong>Exclusions: Entrance fees</strong></p>
-                    </div>
-                    <div class="card-footer text-start bg-white border-0">
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/Canyoneering.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Kawasan Canyoneering</h5>
-                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
-                        <p class="card-text"><strong>Inclusions: Car / Gas / Driver</strong></p>
-                        <p class="card-text"><strong>Exclusions: Entrance fees</strong></p>
-                    </div>
-                    <div class="card-footer text-start bg-white border-0">
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/slide1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cebu City Tour & Mountain Tour</h5>
-                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
-                    </div>
-                    <div class="card-footer text-start bg-white border-0">
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/slide1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Pescador Island Tour</h5>
-                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
-                    </div>
-                    <div class="card-footer text-start bg-white border-0">
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/slide1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Pescador Island Tour</h5>
-                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
-                    </div>
-                    <div class="card-footer text-start bg-white border-0">
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/slide1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Pescador Island Tour</h5>
-                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
-                    </div>
-                    <div class="card-footer text-start bg-white border-0">
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="images/slide1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Pescador Island Tour</h5>
-                        <p class="card-text"><strong>From ₱3400 / person</strong></p>
-                    </div>
-                    <div class="card-footer text-start bg-white border-0">
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-
-         <!-- Featured Tours -->
-    <section class="featured-tours" data-aos="fade-up">
+    <section id="tours" class="section-tours py-5">
         <div class="container">
-          <h2 data-aos="fade-down">Top 3 Sights to Visit in Cebu this 2025!</h2>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-              <div class="featured-card">
-                <img src="images/simala.jpg" alt="Whale Shark Snorkeling">
+            <header class="section-head text-center mb-5 px-2" data-aos="fade-down" data-aos-duration="700" data-aos-offset="110" data-aos-once="true">
+                <p class="section-kicker mb-0">Private tours &amp; transfers</p>
+                <h2 class="display-heading mt-2 mb-3">Explore Cebu your way</h2>
+                <p class="section-lead mx-auto mb-0">City tours, Oslob, canyoneering, and island trips with your own vehicle and driver. <strong class="text-dark">Book</strong> any package to send a request—we confirm by WhatsApp or email.</p>
+            </header>
+            <div class="row gy-4 gx-lg-4 tour-cards-row">
+            <div class="col-md-6 col-xl-4">
+                <article class="card tour-card tour-card--scroll-reveal h-100 border-0" data-tour-id="simala">
+                    <img src="images/simala.jpg" class="card-img-top" alt="Simala Shrine and Carcar" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Simala &amp; Carcar lechon</h3>
+                        <p class="card-text mb-1"><span class="tour-price">From ₱4,500</span> <span class="text-muted small">· full rates in Details</span></p>
+                        <p class="card-text small text-muted mb-2">Includes vehicle, fuel &amp; driver · entrance fees separate</p>
+                        <ul class="tour-card__details small text-muted mb-0" aria-label="Tour highlights">
+                            <li>Simala Shrine (castle church) &amp; time for photos</li>
+                            <li>Carcar stop for lechon / local market</li>
+                            <li>Typical full-day private van (~8–10 hrs, traffic dependent)</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer border-0 tour-card__footer">
+                        <div class="tour-card__actions">
+                            <button type="button" class="btn tour-card__details-btn w-100" data-tour-id="simala" aria-label="View details and itinerary for Simala and Carcar lechon tour">Details</button>
+                            <a href="book.html?tour=simala" class="btn btn-cts-primary w-100">Book this tour</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <article class="card tour-card tour-card--scroll-reveal h-100 border-0" data-tour-id="whale-shark">
+                    <img src="images/w-shark.jpg" class="card-img-top" alt="Whale shark snorkeling in Oslob" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Oslob whale shark · Tumalog · Sumilon</h3>
+                        <p class="card-text mb-1"><span class="tour-price">From ₱5,000</span> <span class="text-muted small">· full rates in Details</span></p>
+                        <p class="card-text small text-muted mb-2">Includes vehicle, fuel &amp; driver · activity fees separate</p>
+                        <ul class="tour-card__details small text-muted mb-0" aria-label="Tour highlights">
+                            <li>Oslob whale shark snorkeling (early slot)</li>
+                            <li>Optional Tumalog Falls &amp; Sumilon Island add-ons</li>
+                            <li>Activity &amp; boat fees quoted separately</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer border-0 tour-card__footer">
+                        <div class="tour-card__actions">
+                            <button type="button" class="btn tour-card__details-btn w-100" data-tour-id="whale-shark" aria-label="View details and itinerary for whale shark snorkeling tour">Details</button>
+                            <a href="book.html?tour=whale-shark" class="btn btn-cts-primary w-100">Book this tour</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <article class="card tour-card tour-card--scroll-reveal h-100 border-0" data-tour-id="safari">
+                    <img src="images/safari.webp" class="card-img-top" alt="Cebu Safari and Adventure Park" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Cebu Safari &amp; Adventure Park</h3>
+                        <p class="card-text mb-1"><span class="tour-price">From ₱4,000</span> <span class="text-muted small">· full rates in Details</span></p>
+                        <p class="card-text small text-muted mb-2">Includes vehicle, fuel &amp; driver · park tickets separate</p>
+                        <ul class="tour-card__details small text-muted mb-0" aria-label="Tour highlights">
+                            <li>Scenic drive to northern Cebu uplands</li>
+                            <li>Safari-style wildlife &amp; attractions inside the park</li>
+                            <li>Park entrance &amp; optional activities on guest account</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer border-0 tour-card__footer">
+                        <div class="tour-card__actions">
+                            <button type="button" class="btn tour-card__details-btn w-100" data-tour-id="safari" aria-label="View details and itinerary for Cebu Safari tour">Details</button>
+                            <a href="book.html?tour=safari" class="btn btn-cts-primary w-100">Book this tour</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <article class="card tour-card tour-card--scroll-reveal h-100 border-0" data-tour-id="canyoneering">
+                    <img src="images/Canyoneering.jpg" class="card-img-top" alt="Kawasan canyoneering" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Kawasan canyoneering</h3>
+                        <p class="card-text mb-1"><span class="tour-price">From ₱5,000</span> <span class="text-muted small">· full rates in Details</span></p>
+                        <p class="card-text small text-muted mb-2">Includes vehicle, fuel &amp; driver · guides &amp; gear separate</p>
+                        <ul class="tour-card__details small text-muted mb-0" aria-label="Tour highlights">
+                            <li>Kawasan Badian jump-off &amp; turquoise canyons</li>
+                            <li>Jump / swim points with local guide team</li>
+                            <li>Moderate fitness; gear &amp; environmental fees extra</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer border-0 tour-card__footer">
+                        <div class="tour-card__actions">
+                            <button type="button" class="btn tour-card__details-btn w-100" data-tour-id="canyoneering" aria-label="View details and itinerary for Kawasan canyoneering tour">Details</button>
+                            <a href="book.html?tour=canyoneering" class="btn btn-cts-primary w-100">Book this tour</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <article class="card tour-card tour-card--scroll-reveal h-100 border-0" data-tour-id="city-mountain">
+                    <img src="images/slide1.png" class="card-img-top" alt="Cebu city and mountain tour" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Cebu city &amp; Mountain tour</h3>
+                        <p class="card-text mb-1"><span class="tour-price">From ₱4,500</span> <span class="text-muted small">· full rates in Details</span></p>
+                        <p class="card-text small text-muted mb-2">Includes vehicle, fuel &amp; driver · entrance fees separate</p>
+                        <ul class="tour-card__details small text-muted mb-0" aria-label="Tour highlights">
+                            <li>City circle: temples, heritage, or shopping (your pace)</li>
+                            <li>Upland stops (e.g. Sirao / viewpoint) when open</li>
+                            <li>Flexible full-day itinerary with your driver</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer border-0 tour-card__footer">
+                        <div class="tour-card__actions">
+                            <button type="button" class="btn tour-card__details-btn w-100" data-tour-id="city-mountain" aria-label="View details and full stop-by-stop itinerary for Cebu city and mountain tour">Details</button>
+                            <a href="book.html?tour=city-mountain" class="btn btn-cts-primary w-100">Book this tour</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-xl-4">
+                <article class="card tour-card tour-card--scroll-reveal h-100 border-0" data-tour-id="pescador">
+                    <img src="images/slide1.png" class="card-img-top" alt="Moalboal Sardines Run" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <h3 class="card-title h5">Moalboal Sardines Run</h3>
+                        <p class="card-text mb-1"><span class="tour-price">From ₱5,000</span> <span class="text-muted small">· full rates in Details</span></p>
+                        <p class="card-text small text-muted mb-2">Includes vehicle, fuel &amp; driver · boat &amp; marine fees separate</p>
+                        <ul class="tour-card__details small text-muted mb-0" aria-label="Tour highlights">
+                            <li>Moalboal coast run &amp; island-hopping style day</li>
+                            <li>Moalboal sardine shoal &amp; reef snorkeling (conditions permitting)</li>
+                            <li>Boat hire, marine fees &amp; snorkel gear quoted separately</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer border-0 tour-card__footer">
+                        <div class="tour-card__actions">
+                            <button type="button" class="btn tour-card__details-btn w-100" data-tour-id="pescador" aria-label="View details and itinerary for Moalboal Sardines Run">Details</button>
+                            <a href="book.html?tour=pescador" class="btn btn-cts-primary w-100">Book this tour</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour details & itinerary (opened from #tours cards) -->
+    <div class="modal fade tour-detail-modal" id="tourDetailModal" tabindex="-1" aria-labelledby="tourDetailModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header border-0 pb-0 align-items-start">
+                    <div class="pe-3">
+                        <h2 class="modal-title h4 mb-0" id="tourDetailModalTitle"></h2>
+                        <p class="tour-detail-modal__price fw-bold text-dark mt-2 mb-0"></p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-3">
+                    <p class="tour-detail-modal__lead small text-muted mb-3"></p>
+                    <div class="tour-detail-modal__vehicle-wrap d-none mb-4">
+                        <h3 class="tour-detail-modal__section-label h6 mb-2">Vehicle &amp; price</h3>
+                        <p class="small text-muted mb-3 tour-detail-modal__vehicle-hint">
+                            Pick Sedan, SUV, or Van—preview updates below. <strong class="text-dark">Book this tour</strong> will use your choice.
+                        </p>
+                        <div class="tour-detail-modal__vehicle-mount"></div>
+                    </div>
+                    <h3 class="tour-detail-modal__section-label h6 mb-3">Sample itinerary</h3>
+                    <ol class="tour-detail-modal__itinerary list-unstyled mb-4"></ol>
+                    <h3 class="tour-detail-modal__section-label h6 mb-2">Good to know</h3>
+                    <ul class="tour-detail-modal__notes small text-muted mb-0"></ul>
+                </div>
+                <div class="modal-footer border-0 flex-wrap gap-2 pt-0">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="book.html" class="btn btn-cts-primary tour-detail-modal__book">Book this tour</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="featured-tours">
+        <div class="container">
+          <header class="featured-head text-center mb-4 mb-lg-5" data-aos="fade-down" data-aos-duration="700" data-aos-offset="100" data-aos-once="true">
+            <p class="section-kicker mb-2">Highlights</p>
+            <h2 class="featured-title mb-0">Top experiences in Cebu this 2026</h2>
+          </header>
+          <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-offset="100" data-aos-delay="0" data-aos-once="true">
+              <div class="featured-card h-100">
+                <img src="images/simala.jpg" alt="Simala Shrine" loading="lazy" decoding="async">
                 <div class="featured-card-body">
-                  <h5>Whale Shark Snorkeling</h5>
-                  <p>Experience a close encounter with majestic whale sharks in Oslob.</p>
+                  <h3 class="h5 mb-2">Simala Shrine</h3>
+                  <p class="mb-0 small text-muted">Visit the castle-like church and enjoy Carcar on the same run.</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
-              <div class="featured-card">
-                <img src="images/safari.webp" alt="Kawasan Canyoneering">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-offset="100" data-aos-delay="100" data-aos-once="true">
+              <div class="featured-card h-100">
+                <img src="images/w-shark.jpg" alt="Whale sharks in Oslob" loading="lazy" decoding="async">
                 <div class="featured-card-body">
-                  <h5>Kawasan Canyoneering</h5>
-                  <p>Enjoy the thrill of canyoneering through waterfalls and natural pools.</p>
+                  <h3 class="h5 mb-2">Oslob whale sharks</h3>
+                  <p class="mb-0 small text-muted">Snorkel with gentle giants—an iconic Cebu day trip.</p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-12 mb-4" data-aos="zoom-in" data-aos-delay="300">
-              <div class="featured-card">
-                <img src="images/w-shark.jpg" alt="Simala Pilgrimage">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="700" data-aos-offset="100" data-aos-delay="200" data-aos-once="true">
+              <div class="featured-card h-100">
+                <img src="images/safari.webp" alt="Cebu Safari and Adventure Park" loading="lazy" decoding="async">
                 <div class="featured-card-body">
-                  <h5>Simala Pilgrimage</h5>
-                  <p>Visit the famous Simala Shrine for a spiritual and cultural experience.</p>
+                  <h3 class="h5 mb-2">Cebu Safari Park</h3>
+                  <p class="mb-0 small text-muted">Wildlife, gardens, and family-friendly trails in the highlands.</p>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#" class="btn btn-success" data-aos="fade-up" data-aos-delay="400">More Tours</a>
+          <div class="text-center mt-5">
+            <a href="#tours" class="btn btn-cts-outline btn-lg px-4">Browse all tours</a>
+          </div>
         </div>
-    </section>          
-    <!--End of Featured  -->
+    </section>
 
-    <!-- Choose Us Section -->
-    <section class="why-choose-us py-5" data-aos="fade-up">
+    <!-- Guest gallery: infinite marquee — edit image list in main.js (GUEST_GALLERY_IMAGES). Only use photos you have permission to show. -->
+    <section class="guest-gallery-section py-5" id="guest-gallery" aria-labelledby="guest-gallery-heading" data-aos="fade-up" data-aos-duration="720" data-aos-offset="100" data-aos-once="true">
+        <div class="container">
+            <header class="guest-gallery__head text-center mb-4 mb-lg-5 px-2">
+                <p class="section-kicker mb-2">Real travelers</p>
+                <h2 id="guest-gallery-heading" class="guest-gallery__title mb-3">Our guests on tour</h2>
+                <p class="guest-gallery__lede text-muted small mx-auto mb-0">Snapshots from private trips around Cebu—shared with thanks to our guests.</p>
+            </header>
+        </div>
+        <div class="guest-gallery__viewport" role="region" aria-label="Scrolling guest photos from tours">
+            <div class="guest-gallery__track" id="guestGalleryTrack" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <section class="why-choose-us section-choose py-5">
         <div class="container text-center">
-          <h2 class="mb-5" data-aos="fade-down">Why Choose Us?</h2>
+          <h2 class="mb-5" data-aos="zoom-in" data-aos-duration="600" data-aos-offset="100" data-aos-once="true">Why Choose Us?</h2>
           <div class="row">
             <!-- Best Prices -->
-            <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-duration="680" data-aos-offset="90" data-aos-delay="0" data-aos-once="true">
               <div class="service-card flex-fill">
                 <i class="bi bi-tags-fill icon"></i>
                 <h5>Best Prices</h5>
@@ -238,7 +313,7 @@
               </div>
             </div>
             <!-- 24/7 Support -->
-            <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-duration="680" data-aos-offset="90" data-aos-delay="120" data-aos-once="true">
               <div class="service-card flex-fill">
                 <i class="bi bi-headset icon"></i>
                 <h5>24/7 Support</h5>
@@ -246,7 +321,7 @@
               </div>
             </div>
             <!-- Experienced Guides -->
-            <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-duration="680" data-aos-offset="90" data-aos-delay="240" data-aos-once="true">
               <div class="service-card flex-fill">
                 <i class="bi bi-person-badge icon"></i>
                 <h5>Experienced Guides</h5>
@@ -258,189 +333,219 @@
     </section>          
     <!-- End of Choose Us Section -->
 
-    <!-- Testimonial Section -->
-    <section class="testimonials-header" data-aos="fade-up">
-        <h1 data-aos="fade-down">Testimonials</h1>
-        <p data-aos="fade-up" data-aos-delay="100">What our customers say about us</p>
+    <section class="customer-reviews-section py-5" id="reviews" aria-labelledby="customer-reviews-heading" data-aos="fade-up" data-aos-duration="750" data-aos-offset="120" data-aos-once="true">
+        <div class="container">
+            <h2 id="customer-reviews-heading" class="reviews-slideshow__title text-center mb-4 mb-lg-5">Customer reviews</h2>
+
+            <div id="customerReviewsCarousel" class="carousel slide customer-reviews-carousel" data-bs-wrap="true" role="region" aria-roledescription="carousel" aria-label="Customer review slides">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="reviews-slideshow__solo-wrap">
+                            <article class="review-slide-card review-slide-card--solo h-100">
+                                <h3 class="visually-hidden">Review by Ben Neld&apos;z</h3>
+                                <div class="review-slide-card__panel">
+                                    <span class="review-slide-card__mark" aria-hidden="true">“</span>
+                                    <p class="review-slide-card__text">Very highly recommended! Thank you po for making our Cebu stay smooth 😊 punctual, friendly, and accommodating driver. Will surely avail your service again pag balik namin ng Cebu.</p>
+                                    <div class="review-slide-card__stars" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <img src="images/testimonial1.jpg" alt="Portrait of Ben Neld&apos;z" class="review-slide-card__avatar" width="96" height="96" loading="eager" decoding="async">
+                                <p class="review-slide-card__name">Ben Neld&apos;z</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="reviews-slideshow__solo-wrap">
+                            <article class="review-slide-card review-slide-card--solo h-100">
+                                <h3 class="visually-hidden">Review by Anna Luisa L.</h3>
+                                <div class="review-slide-card__panel">
+                                    <span class="review-slide-card__mark" aria-hidden="true">“</span>
+                                    <p class="review-slide-card__text">Great experience with our sightseeing tour! Very trustworthy and accomodating! Highly recommended!</p>
+                                    <div class="review-slide-card__stars" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <img src="images/testimonial2.jpg" alt="Portrait of Anna Luisa Lopez" class="review-slide-card__avatar" width="96" height="96" loading="lazy" decoding="async">
+                                <p class="review-slide-card__name">Anna Luisa L.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="reviews-slideshow__solo-wrap">
+                            <article class="review-slide-card review-slide-card--solo h-100">
+                                <h3 class="visually-hidden">Review by Heidi M.</h3>
+                                <div class="review-slide-card__panel">
+                                    <span class="review-slide-card__mark" aria-hidden="true">“</span>
+                                    <p class="review-slide-card__text">Napakabait ni Kuya Norman! Yung tipong worry free ang trip nyo pati kahit mga dala dala mo sa taxi nya. Wala kang masabi sa driver na to. A very patient and trustworthy driver at on-time sya. Mahiyain din sya at masayahin. Thank you Kuya Norman! Sa uulitin</p>
+                                    <div class="review-slide-card__stars" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <img src="images/testimonial3.jpg" alt="Portrait of Heidi Mendoza" class="review-slide-card__avatar" width="96" height="96" loading="lazy" decoding="async">
+                                <p class="review-slide-card__name">Heidi M.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="reviews-slideshow__solo-wrap">
+                            <article class="review-slide-card review-slide-card--solo h-100">
+                                <h3 class="visually-hidden">Review by Mizzy I.</h3>
+                                <div class="review-slide-card__panel">
+                                    <span class="review-slide-card__mark" aria-hidden="true">“</span>
+                                    <p class="review-slide-card__text">Kuya Norman is such a pleasant person/driver! We booked him for 3 days when going around from Cebu City to Moalboal to Oslob and back to Cebu City and kuya would patiently wait for us in the tour locations. He is also always on time and so easy-going! He is very honest and trustworthy which is most MOST important. I would often ask him where to go for pasalubongs and he would know where to bring us! Thank you for making our trip to cebu fuss-free. We really enjoyed our time there. HIGHLY HIGHLY RECOMMEND! 😊</p>
+                                    <div class="review-slide-card__stars" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <img src="images/testimonial4.jpg" alt="Portrait of Mizzy I." class="review-slide-card__avatar" width="96" height="96" loading="lazy" decoding="async">
+                                <p class="review-slide-card__name">Mizzy I.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="reviews-slideshow__solo-wrap">
+                            <article class="review-slide-card review-slide-card--solo h-100">
+                                <h3 class="visually-hidden">Review by Bernadette N. R.</h3>
+                                <div class="review-slide-card__panel">
+                                    <span class="review-slide-card__mark" aria-hidden="true">“</span>
+                                    <p class="review-slide-card__text">Thank you po sir! Sobrang ayos yung service niyo. Sayang po at nasaktuhan yung tour natin ng bagyo but you were very accomodating! Thank you uli 🙂</p>
+                                    <div class="review-slide-card__stars" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <img src="images/testimonial5.jpg" alt="Portrait of Bernadette N. R." class="review-slide-card__avatar" width="96" height="96" loading="lazy" decoding="async">
+                                <p class="review-slide-card__name">Bernadette N. R.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="reviews-slideshow__solo-wrap">
+                            <article class="review-slide-card review-slide-card--solo h-100">
+                                <h3 class="visually-hidden">Review by Divine Honra S.</h3>
+                                <div class="review-slide-card__panel">
+                                    <span class="review-slide-card__mark" aria-hidden="true">“</span>
+                                    <p class="review-slide-card__text">Very affordable and friendly staff. Thank you Kuya Clai sa 4 days trip sa Cebu. Balik po kami dyan</p>
+                                    <div class="review-slide-card__stars" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <img src="images/testimonial6.jpg" alt="Portrait of Divine Honra S." class="review-slide-card__avatar" width="96" height="96" loading="lazy" decoding="async">
+                                <p class="review-slide-card__name">Divine Honra S.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="reviews-slideshow__solo-wrap">
+                            <article class="review-slide-card review-slide-card--solo h-100">
+                                <h3 class="visually-hidden">Review by Czarina San Diego L.</h3>
+                                <div class="review-slide-card__panel">
+                                    <span class="review-slide-card__mark" aria-hidden="true">“</span>
+                                    <p class="review-slide-card__text">Recommended 👌 for a comfortable tour with very good working airconditioner.. we had our tour immediately after airport arrival (the bags were kept secured in the taxi during the tour) plus mabait at magaling na photographer si sir norman 👍</p>
+                                    <div class="review-slide-card__stars" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <img src="images/testimonial7.jpg" alt="Portrait of Czarina San Diego L." class="review-slide-card__avatar" width="96" height="96" loading="lazy" decoding="async">
+                                <p class="review-slide-card__name">Czarina San Diego L.</p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="reviews-slideshow__solo-wrap">
+                            <article class="review-slide-card review-slide-card--solo h-100">
+                                <h3 class="visually-hidden">Review by Julie Tan</h3>
+                                <div class="review-slide-card__panel">
+                                    <span class="review-slide-card__mark" aria-hidden="true">“</span>
+                                    <p class="review-slide-card__text">Kuya is so friendly and very accommodating.. two thumbs up.</p>
+                                    <div class="review-slide-card__stars" aria-label="5 out of 5 stars">
+                                        <i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <img src="images/testimonial8.jpg" alt="Portrait of Julie Tan" class="review-slide-card__avatar" width="96" height="96" loading="lazy" decoding="async">
+                                <p class="review-slide-card__name">Julie Tan</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators customer-reviews-carousel__dots" aria-label="Choose a review">
+                    <button type="button" data-bs-target="#customerReviewsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Review 1: Ben Neld'z"></button>
+                    <button type="button" data-bs-target="#customerReviewsCarousel" data-bs-slide-to="1" aria-label="Review 2: Anna Luisa L."></button>
+                    <button type="button" data-bs-target="#customerReviewsCarousel" data-bs-slide-to="2" aria-label="Review 3: Heidi M."></button>
+                    <button type="button" data-bs-target="#customerReviewsCarousel" data-bs-slide-to="3" aria-label="Review 4: Mizzy I."></button>
+                    <button type="button" data-bs-target="#customerReviewsCarousel" data-bs-slide-to="4" aria-label="Review 5: Bernadette N. R."></button>
+                    <button type="button" data-bs-target="#customerReviewsCarousel" data-bs-slide-to="5" aria-label="Review 6: Divine Honra S."></button>
+                    <button type="button" data-bs-target="#customerReviewsCarousel" data-bs-slide-to="6" aria-label="Review 7: Czarina San Diego L."></button>
+                    <button type="button" data-bs-target="#customerReviewsCarousel" data-bs-slide-to="7" aria-label="Review 8: Julie Tan"></button>
+                </div>
+            </div>
+        </div>
     </section>
-
-    <section class="row">
-        <div class="col-12" data-aos="fade-right">
-            <section class="testimonial-card">
-              <h3 class="visually-hidden">Testimonial by Ben Neld'z</h3>
-                <div class="testimonial-text">
-                    <p>"Very highly recommended! Thank you po for making our Cebu stay smooth 😊 punctual, friendly, and accommodating driver. Will surely avail your service again pag balik namin ng Cebu. ⭐⭐⭐⭐⭐"</p>
-                    <div class="testimonial-author">
-                        Ben Neld'z
-                    </div>
-                </div>
-                <img src="images/testimonial1.jpg" alt="Ben Neld'z" class="testimonial-avatar">
-            </section>
-        </div>
-
-        <div class="col-12" data-aos="fade-left">
-            <section class="testimonial-card text-left">
-              <h3 class="visually-hidden">Testimonial by Anna Luisa L.</h3>
-                <div class="testimonial-text">
-                    <p>"Great experience with our sightseeing tour! Very trustworthy and accomodating! Highly recommended!"</p>
-                    <div class="testimonial-author">
-                        Anna Luisa L.
-                    </div>
-                </div>
-                <img src="images/testimonial2.jpg" alt="Anna Luisa Lopez" class="testimonial-avatar">
-            </section>
-        </div>
-
-        <div class="col-12" data-aos="fade-right">
-            <section class="testimonial-card">
-              <h3 class="visually-hidden">Testimonial by Heidi M.</h3>
-                <div class="testimonial-text">
-                    <p>"Napakabait ni Kuya Norman! Yung tipong worry free ang trip nyo pati kahit mga dala dala mo sa taxi nya. Wala kang masabi sa driver na to. A very patient and trustworthy driver at on-time sya. Mahiyain din sya at masayahin. Thank you Kuya Norman! Sa uulitin"</p>
-                    <div class="testimonial-author">
-                        Heidi M.
-                    </div>
-                </div>
-                <img src="images/testimonial3.jpg" alt="Heidi Mendoza" class="testimonial-avatar">
-            </section>
-        </div>
-
-        <div class="col-12" data-aos="fade-left">
-            <section class="testimonial-card text-left">
-              <h3 class="visually-hidden">Testimonial by Mizzy</h3>
-                <div class="testimonial-text">
-                    <p>"Kuya Norman is such a pleasant person/driver! We booked him for 3 days when going around from Cebu City to Moalboal to Oslob and back to Cebu City and kuya would patiently wait for us in the tour locations. He is also always on time and so easy-going! He is very honest and trustworthy which is most MOST important. I would often ask him where to go for pasalubongs and he would know where to bring us! Thank you for making our trip to cebu fuss-free. We really enjoyed our time there. HIGHLY HIGHLY RECOMMEND! 😊"</p>
-                    <div class="testimonial-author">
-                        Mizzy I.
-                    </div>
-                </div>
-                <img src="images/testimonial4.jpg" alt="Mizzy I" class="testimonial-avatar">
-            </section>
-        </div>
-
-        <div class="col-12" data-aos="fade-right">
-            <section class="testimonial-card text-left">
-              <h3 class="visually-hidden">Testimonial by Bernadette N. R.</h3>
-                <div class="testimonial-text">
-                    <p>"Thank you po sir! Sobrang ayos yung service niyo. Sayang po at nasaktuhan yung tour natin ng bagyo but you were very accomodating! Thank you uli 🙂"</p>
-                    <div class="testimonial-author">
-                        Bernadette N. R.
-                    </div>
-                </div>
-                <img src="images/testimonial5.jpg" alt="Bernadette N. R." class="testimonial-avatar">
-            </section>
-        </div>
-
-        <div class="col-12" data-aos="fade-left">
-            <section class="testimonial-card text-left">
-              <h3 class="visually-hidden">Testimonial by Bernadette N. R.</h3>
-                <div class="testimonial-text">
-                    <p>"Very affordable and friendly staff. Thank you Kuya Clai sa 4 days trip sa Cebu. Balik po kami dyan"</p>
-                    <div class="testimonial-author">
-                        Divine Honra S.
-                    </div>
-                </div>
-                <img src="images/testimonial6.jpg" alt="Bernadette N. R." class="testimonial-avatar">
-            </section>
-        </div>
-
-        <div class="col-12" data-aos="fade-right">
-            <section class="testimonial-card text-left">
-              <h3 class="visually-hidden">Testimonial by Czarina San Diego L.</h3>
-                <div class="testimonial-text">
-                    <p>"Recommended 👌 for a comfortable tour with very good working airconditioner.. we had our tour immediately after airport arrival (the bags were kept secured in the taxi during the tour) plus mabait at magaling na photographer si sir norman 👍"</p>
-                    <div class="testimonial-author">
-                        Czarina San Diego L.
-                    </div>
-                </div>  
-                <img src="images/testimonial7.jpg" alt="Anna Luisa Lopez" class="testimonial-avatar">
-            </section>
-        </div>
-
-        <div class="col-12" data-aos="fade-left">
-            <section class="testimonial-card text-left">
-              <h3 class="visually-hidden">Testimonial by Julie Tan</h3>
-                <div class="testimonial-text">
-                    <p>"Kuya is so friendly and very accommodating.. two thumbs up."</p>
-                    <div class="testimonial-author">
-                        Julie Tan
-                    </div>
-                </div>
-                <img src="images/testimonial8.jpg" alt="Julie Tan" class="testimonial-avatar">
-            </section>
-        </div>
-
-        <div class="text-center my-4" data-aos="fade-up">
-            <button id="loadMoreBtn" class="btn btn-primary">Load More</button>
-          </div>
-    </section>
-    <!--End of testimonials-->
 
     <!-- Payments -->
-    <section class="accepted-payments" data-aos="fade-up">
-        <div class="container">
-          <h2 class="section-title" data-aos="fade-down">Accepted Payment Methods</h2>
-          <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Secure & convenient payment options</p>
-          
-          <div class="payment-grid">
-            <!-- Online Payments -->
-            <div class="payment-card" data-aos="flip-left" data-aos-delay="100">
-              <div class="payment-icon">
-                <img src="images/online-payments-1.webp" alt="Online Payments" loading="lazy">
-              </div>
-              <h3 class="payment-title">Online Payments</h3>
-              <div class="payment-desc">Credit/Debit Cards, Paylist</div>
+    <section class="accepted-payments payments-showcase" data-aos="fade-up" data-aos-duration="780" data-aos-offset="120" data-aos-once="true">
+        <div class="payments-showcase__bg" aria-hidden="true"></div>
+        <div class="container position-relative">
+            <header class="payments-showcase__head text-center mb-5">
+                <p class="payments-showcase__eyebrow mb-2">E-wallet checkout</p>
+                <h2 class="section-title payments-showcase__title mb-3">Accepted payments</h2>
+                <p class="section-subtitle payments-showcase__lede mx-auto mb-0">We accept <strong>GCash</strong> and <strong>Maya</strong> after your booking is confirmed—details arrive with your confirmation.</p>
+            </header>
+
+            <div class="payments-showcase__grid">
+                <article class="payment-tile payment-tile--gcash" tabindex="0" data-aos="flip-left" data-aos-duration="700" data-aos-offset="100" data-aos-delay="0" data-aos-once="true">
+                    <div class="payment-tile__glow" aria-hidden="true"></div>
+                    <div class="payment-tile__body">
+                        <div class="payment-tile__logo">
+                            <img src="images/gcash.png" alt="GCash" loading="lazy" decoding="async" width="200" height="80">
+                        </div>
+                        <p class="payment-tile__text">We’ll send our GCash number or QR after your booking is confirmed.</p>
+                        <span class="payment-tile__accent" aria-hidden="true"></span>
+                    </div>
+                </article>
+                <article class="payment-tile payment-tile--maya" tabindex="0" data-aos="flip-right" data-aos-duration="700" data-aos-offset="100" data-aos-delay="120" data-aos-once="true">
+                    <div class="payment-tile__glow" aria-hidden="true"></div>
+                    <div class="payment-tile__body">
+                        <div class="payment-tile__logo">
+                            <img src="images/maya.png" alt="Maya" loading="lazy" decoding="async" width="200" height="80">
+                        </div>
+                        <p class="payment-tile__text">We’ll send Maya payment details after your tour is reserved.</p>
+                        <span class="payment-tile__accent" aria-hidden="true"></span>
+                    </div>
+                </article>
             </div>
-            
-            <!-- E-Wallets -->
-            <div class="payment-card" data-aos="flip-left" data-aos-delay="200">
-              <div class="payment-icon">
-                <img src="images/ewallets.webp" alt="E-Wallets" loading="lazy">
-              </div>
-              <h3 class="payment-title">E-Wallets</h3>
-              <div class="payment-desc">CCash, Payking, Cushby</div>
-            </div>
-            
-            <!-- Bank Transfers -->
-            <div class="payment-card" data-aos="flip-left" data-aos-delay="300">
-              <div class="payment-icon">
-                <img src="images/bank.webp" alt="Bank Transfers" loading="lazy">
-              </div>
-              <h3 class="payment-title">Bank Transfers</h3>
-              <div class="payment-desc">Direct Deposits & Online Banking</div>
-            </div>
-          </div>
         </div>
     </section>
 
     <div class="floating-contacts">
-        <!-- Toggle Button -->
-        <div class="contact-button toggle-button">
-            <i class="fas fa-comment-dots"></i>
-            <i class="fas fa-times" style="display: none;"></i>
+        <div class="floating-contacts__fab-row" role="button" tabindex="0" aria-expanded="false" aria-controls="floatingContactOptions">
+            <span class="floating-contacts__cta-label">Chat now</span>
+            <div class="contact-button toggle-button">
+                <i class="fas fa-comment-dots"></i>
+                <i class="fas fa-times" style="display: none;"></i>
+            </div>
         </div>
-        
-        <!-- Contact Buttons (hidden by default) -->
-        <div class="contact-options">
+        <div class="contact-options" id="floatingContactOptions">
             <div class="contact-button phone">
-                <a href="tel:+09562748320">
+                <a href="tel:+639993720079">
                     <i class="fas fa-phone"></i>
                     <span class="contact-text">Call Us</span>
                 </a>
             </div>
             <div class="contact-button whatsapp">
-                <a href="https://wa.me/09562748320" target="_blank">
+                <a href="https://wa.me/639993720079" target="_blank" rel="noopener noreferrer" title="WhatsApp Business">
                     <i class="fab fa-whatsapp"></i>
                     <span class="contact-text">WhatsApp</span>
                 </a>
             </div>
             <div class="contact-button messenger">
-                <a href="https://m.me/Cebutaxixi" target="_blank">
+                <a href="https://m.me/cebutaxixi" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-facebook-messenger"></i>
                     <span class="contact-text">Message Us</span>
                 </a>
             </div>
             <div class="contact-button facebook">
-                <a href="https://www.facebook.com/Cebutaxixi" target="_blank">
+                <a href="https://www.facebook.com/Cebutaxixi" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-facebook-f"></i>
                     <span class="contact-text">Our Facebook</span>
                 </a>
@@ -448,18 +553,12 @@
         </div>
     </div>
       
-    <!-- Admin form (hidden from public) -->
-    <div class="admin-post-form" style="display:none;">
-        <textarea id="new-guest" placeholder="Guest details..."></textarea>
-        <button id="post-guest">Publish</button>
-    </div>
-      
     <!-- footer -->
-    <footer class="footer-section bg-dark text-white pt-5 pb-4" data-aos="fade-up">
+    <footer class="footer-section bg-dark text-white pt-5 pb-4" data-aos="fade-up" data-aos-duration="720" data-aos-offset="80" data-aos-once="true">
         <div class="container">
           <div class="row">
             <!-- Contact Information -->
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6 mb-4">
               <div class="d-flex align-items-center mb-4">
                 <h5 class="text-uppercase mb-0">Get In Touch!</h5>
               </div>
@@ -467,7 +566,7 @@
                 <li class="mb-3 d-flex align-items-start">
                   <i class="bi bi-telephone me-3 mt-1"></i>
                   <div>
-                    <a href="tel:+639562748320" class="text-white text-decoration-none">+63 956 274 8320</a>
+                    <a href="tel:+639993720079" class="text-white text-decoration-none">+63 999 372 0079</a>
                     <div class="small text-muted">Available 24/7</div>
                   </div>
                 </li>
@@ -483,68 +582,73 @@
             </div>
       
             <!-- Quick Links with Double Arrows -->
-            <div class="col-lg-2 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-2 col-md-6 mb-4">
               <h5 class="text-uppercase mb-4">QUICK LINKS</h5>
               <ul class="list-unstyled">
                 <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none">
+                  <a href="index.html" class="text-white text-decoration-none">
                     <span class="double-arrow">»</span> Home
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none">
+                  <a href="index.html#tours" class="text-white text-decoration-none">
                     <span class="double-arrow">»</span> Tours
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none">
-                    <span class="double-arrow">»</span> Services
+                  <a href="book.html" class="text-white text-decoration-none">
+                    <span class="double-arrow">»</span> Book
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none">
-                    <span class="double-arrow">»</span> Gallery
+                  <a href="index.html#bohol" class="text-white text-decoration-none">
+                    <span class="double-arrow">»</span> Bohol
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none">
-                    <span class="double-arrow">»</span> Blog
+                  <a href="transfers.html" class="text-white text-decoration-none">
+                    <span class="double-arrow">»</span> Transfers
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a href="contact.html" class="text-white text-decoration-none">
+                    <span class="double-arrow">»</span> Contact
                   </a>
                 </li>
               </ul>
             </div>
       
             <!-- Additional Resources with Double Arrows -->
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-3 col-md-6 mb-4">
               <h5 class="text-uppercase mb-4">ADDITIONAL RESOURCES</h5>
               <ul class="list-unstyled">
                 <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none">
+                  <a href="faq.html" class="text-white text-decoration-none">
                     <span class="double-arrow">»</span> FAQ
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none">
+                  <a href="privacy.html" class="text-white text-decoration-none">
                     <span class="double-arrow">»</span> Privacy Policy
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none">
+                  <a href="terms.html" class="text-white text-decoration-none">
                     <span class="double-arrow">»</span> Terms and Conditions
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none">
+                  <a href="contact.html" class="text-white text-decoration-none">
                     <span class="double-arrow">»</span> Contact Us
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none">
+                  <a href="index.html#reviews" class="text-white text-decoration-none">
                     <span class="double-arrow">»</span> Client Reviews
                   </a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-white text-decoration-none">
+                  <a href="about.html" class="text-white text-decoration-none">
                     <span class="double-arrow">»</span> About Us
                   </a>
                 </li>
@@ -552,14 +656,11 @@
             </div>
       
             <!-- About Company -->
-            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="col-lg-3 col-md-6 mb-4">
               <h5 class="text-uppercase mb-4">About Us</h5>
-              <p class="small">Cebu Tour Service Taxi has been providing reliable and affordable tour and transport services in Cebu since 2016. With years of experience, we ensure a safe and hassle-free travel experience for both tourists and locals. Connect with us on Facebook to book your ride and explore Cebu with ease!</p>
+              <p class="small">Cebu Tour Service Taxi began in 2016 when our father—a longtime Cebu taxi driver—asked his sons to launch a Facebook page so guests could book tours and transfers more easily. Today we still arrange private Cebu tours, south and north runs, and hotel and airport transfers with the same straightforward, road-tested service we started with.</p>
               <div class="social-links mt-3">
-                <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="text-white me-3"><i class="bi bi-twitter-x"></i></a>
-                <a href="#" class="text-white"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.facebook.com/Cebutaxixi" class="text-white" target="_blank" rel="noopener noreferrer" aria-label="Cebu Tour Service Taxi on Facebook"><i class="bi bi-facebook" aria-hidden="true"></i><span class="visually-hidden">Facebook</span></a>
               </div>
             </div>
           </div>
@@ -567,7 +668,7 @@
           <div class="border-top border-secondary pt-3 mt-3">
             <div class="row">
               <div class="col-md-6 text-center text-md-start">
-                <p class="mb-0 small">© 2025 cebutourservicetaxi  All rights reserved.</p>
+                <p class="mb-0 small">© 2026 Cebu Tour Service Taxi. All rights reserved.</p>
               </div>
               <div class="col-md-6 text-center text-md-end">
                 <p class="mb-0 small">Reliable Tour & Transport Service Since 2016</p>
