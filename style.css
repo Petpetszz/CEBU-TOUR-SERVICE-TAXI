@@ -2982,6 +2982,15 @@ body.home #tours .tour-card .card-img-top {
     object-fit: cover;
 }
 
+/* Combined Kawasan+Moalboal artwork has text; keep full graphic visible */
+body.home #tours .tour-card .card-img-top.card-img-top--full-art {
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    object-position: center top;
+    background: #0b6fa3;
+}
+
 @media (hover: hover) and (pointer: fine) {
     body.home #tours .tour-card .card-img-top {
         transition: transform var(--interactive-duration) var(--motion-ease-out);

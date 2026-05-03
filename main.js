@@ -627,11 +627,11 @@ var TOUR_DETAILS = {
             bookParam: "safari"
         },
         canyoneering: {
-            title: "Kawasan canyoneering",
+            title: "Kawasan canyoneering / Moalboal Sardines Run",
             priceLine: "Sedan ₱5,000 · SUV ₱6,000 · Van ₱7,500 (vehicle, fuel & driver)",
             vehiclePrices: { sedan: 5000, suv: 6000, van: 7500 },
             lead:
-                "Private transport to Badian / Kawasan area. Local canyoneering guides, gear, and environmental or LGU fees are arranged and paid through accredited operators on site (not included in the transfer quote on the card).",
+                "Private transport for a combined south day: Kawasan canyoneering plus Moalboal sardines run. Local canyoneering guides, gear, environmental fees, boat hire, and marine fees are arranged and paid on site.",
             itinerary: [
                 {
                     label: "Pick-up & drive south",
@@ -646,6 +646,10 @@ var TOUR_DETAILS = {
                     text: "Guided jumps, swims, and walks through turquoise pools—pace follows the guide and group ability."
                 },
                 {
+                    label: "Moalboal sardines run",
+                    text: "Proceed to Moalboal coast for sardines and reef snorkeling when sea conditions and local rules allow."
+                },
+                {
                     label: "Finish & return",
                     text: "Change into dry clothes, light snack if you like, then private drive back to Cebu / Mactan."
                 }
@@ -653,7 +657,8 @@ var TOUR_DETAILS = {
             notes: [
                 "Moderate fitness is recommended; disclose health concerns to guides before starting.",
                 "Protect phones with waterproof gear; follow guide instructions at all times.",
-                "Itinerary length varies by operator slot and river conditions."
+                "Boat, marine, and guide fees are separate and can vary by day and operator.",
+                "Itinerary length varies by operator slot, traffic, and river/sea conditions."
             ],
             bookParam: "canyoneering"
         },
