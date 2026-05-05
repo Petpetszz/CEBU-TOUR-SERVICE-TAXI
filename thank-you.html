@@ -27,15 +27,40 @@
 <body class="home d-flex flex-column min-vh-100">
     <main class="container py-5 my-4 flex-grow-1">
         <div class="row justify-content-center">
-            <div class="col-lg-7">
-                <div class="card border-0 shadow-sm">
-                    <div class="card-body p-4 p-md-5 text-center">
-                        <p class="text-uppercase small text-muted mb-2">Booking request received</p>
-                        <h1 class="h3 mb-3">Thank you! We got your request.</h1>
-                        <p class="text-muted mb-4">Our team will contact you soon via WhatsApp, phone, or email to confirm availability and final details.</p>
-                        <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center">
-                            <a class="btn btn-cts-primary" href="index.html">Back to Home</a>
-                            <a class="btn btn-outline-secondary" href="book.html">Send Another Request</a>
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="text-center mb-4">
+                            <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-success-subtle text-success mb-3" style="width: 64px; height: 64px;">
+                                <i class="bi bi-check2-circle fs-2" aria-hidden="true"></i>
+                            </span>
+                            <p class="text-uppercase small text-muted mb-2">Booking request received</p>
+                            <h1 class="h3 mb-3">Thank you! We got your request.</h1>
+                            <p class="text-muted mb-0">Our team will contact you soon via WhatsApp, phone, or email to confirm availability and final details.</p>
+                        </div>
+
+                        <div class="p-3 p-md-4 bg-light rounded-3 mb-4">
+                            <h2 class="h6 mb-3">What happens next?</h2>
+                            <ul class="small text-muted mb-0 ps-3">
+                                <li>We review your requested date, route, and pickup details.</li>
+                                <li>We reply with availability, final quote, and trip notes.</li>
+                                <li>You confirm the schedule and we lock in your booking.</li>
+                            </ul>
+                        </div>
+
+                        <div class="d-grid d-md-flex gap-2 justify-content-center">
+                            <a class="btn btn-cts-primary d-inline-flex align-items-center justify-content-center gap-2 px-3 py-2" style="min-width: 190px;" href="book.html">
+                                <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                                <span>Send another request</span>
+                            </a>
+                            <a class="btn btn-outline-success d-inline-flex align-items-center justify-content-center gap-2 px-3 py-2" style="min-width: 190px;" href="https://wa.me/639993720079" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                                <span>Chat on WhatsApp</span>
+                            </a>
+                            <a class="btn btn-outline-secondary d-inline-flex align-items-center justify-content-center gap-2 px-3 py-2" style="min-width: 190px;" href="index.html">
+                                <i class="bi bi-house-door" aria-hidden="true"></i>
+                                <span>Back to Home</span>
+                            </a>
                         </div>
                     </div>
                 </div>
