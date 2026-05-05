@@ -1,0 +1,20 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "http://cebutourservicetaxi.com/*"
+  to = "https://www.cebutourservicetaxi.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.cebutourservicetaxi.com/*"
+  to = "https://www.cebutourservicetaxi.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://cebutourservicetaxi.com/*"
+  to = "https://www.cebutourservicetaxi.com/:splat"
+  status = 301
+  force = true
