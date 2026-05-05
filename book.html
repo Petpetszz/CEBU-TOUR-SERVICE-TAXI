@@ -66,7 +66,11 @@
             <div class="col-lg-8">
                 <div class="card border-0 booking-card booking-card--sheet">
                     <div class="card-body p-4 p-md-5">
-                        <form id="bookingForm" class="booking-form" novalidate>
+                        <form id="bookingForm" class="booking-form" name="booking-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/book.html?submitted=true">
+                            <input type="hidden" name="form-name" value="booking-request">
+                            <p class="d-none">
+                                <label>Do not fill this out if you're human: <input name="bot-field"></label>
+                            </p>
                             <div class="booking-form__section">
                                 <h2 class="booking-form__section-label">Trip details</h2>
                                 <div class="mb-4">
@@ -131,14 +135,14 @@
                                     <textarea class="form-control" id="bookingNotes" name="notes" rows="4" placeholder="For transfers: flight number, airline, terminal, and full drop-off address. Tours: child seats, extra stops, etc."></textarea>
                                 </div>
                             </div>
-                            <p class="small booking-actions-note mb-3">Sending opens WhatsApp or your email app with your details filled in. No payment is taken on this website.</p>
+                            <p class="small booking-actions-note mb-3">Send request submits directly to our team via Netlify Forms. WhatsApp is optional if you want a faster chat. No payment is taken on this website.</p>
                             <p class="small text-muted booking-privacy-note mb-3">We use what you enter only to reply to your request. We do not sell your details or use them for unrelated marketing. See our <a href="privacy.html" class="text-decoration-none">Privacy policy</a>.</p>
                             <div class="d-flex flex-column flex-sm-row booking-actions">
                                 <button type="button" class="btn btn-lg btn-booking btn-booking--whatsapp" data-action="whatsapp">
                                     <i class="fab fa-whatsapp" aria-hidden="true"></i>Send via WhatsApp
                                 </button>
-                                <button type="button" class="btn btn-lg btn-booking btn-booking--email" data-action="email">
-                                    <i class="bi bi-envelope" aria-hidden="true"></i>Email this request
+                                <button type="submit" class="btn btn-lg btn-booking btn-booking--email">
+                                    <i class="bi bi-envelope-check" aria-hidden="true"></i>Send request
                                 </button>
                             </div>
                         </form>
